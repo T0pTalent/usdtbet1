@@ -1,0 +1,109 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>USDT Payment</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    background: #0d1117;
+    color: #e6edf3;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .card {
+    width: 100%;
+    max-width: 560px;
+    background: #161b22;
+    border: 1px solid #262d38;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+  }
+  .accept {
+    text-align: center;
+    font-size: 15px;
+    color: #26a17b;
+    font-weight: 600;
+    letter-spacing: .3px;
+    margin-bottom: 22px;
+  }
+  .wallet {
+    background: #0d1117;
+    border: 1px solid #262d38;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 14px;
+  }
+  .net {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    margin-bottom: 10px;
+  }
+  .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #26a17b;
+  }
+  .net .coin { color: #8b949e; font-weight: 500; text-transform: none; }
+  .addr {
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 14px;
+    color: #58a6ff;
+    word-break: break-all;
+    line-height: 1.5;
+    min-height: 21px;
+  }
+  .note {
+    margin-top: 22px;
+    padding-top: 20px;
+    border-top: 1px solid #262d38;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #b9c2cc;
+  }
+  .note strong { color: #e6edf3; }
+  .example {
+    margin-top: 12px;
+    background: #0d1117;
+    border: 1px solid #262d38;
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 14px;
+    color: #f0b429;
+  }
+</style>
+
+<div class="card">
+  <div class="accept">We accept USDT only</div>
+
+  <div class="wallet">
+    <div class="net"><span class="dot"></span>BEP20 <span class="coin">USDT (BSC)</span></div>
+    <div class="addr">0x681EC39c6034c03Af14ed7f67b1B7d999710f9e1</div>
+  </div>
+
+  <div class="wallet">
+    <div class="net"><span class="dot"></span>ERC20 <span class="coin">USDT (Ethereum)</span></div>
+    <div class="addr">0x411CD37AF430505CF9058FBAAdCf12B3156D2c9C</div>
+  </div>
+
+  <div class="wallet">
+    <div class="net"><span class="dot"></span>TRC20 <span class="coin">USDT (Tron)</span></div>
+    <div class="addr">TK2yvbSMNkk93M7VLCj6HC1GmEt5bLQTjP</div>
+  </div>
+
+  <div class="note">
+    These wallet addresses are permanent and secure.<br>
+    After sending your payment, please provide the <strong>date</strong>, <strong>amount</strong>, and <strong>network</strong> used.
+    <div class="example">Example: 06/01, 5000 USDT, BEP20</div>
+  </div>
+</div>
